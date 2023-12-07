@@ -6,6 +6,7 @@ const ConsoleOutput = (string: string) => {
     <TerminalUserInfo /> {string}
     <br />
   </div>;
+  return string;
 };
 
 export { CommandOutput, ConsoleOutput };

@@ -8,7 +8,7 @@ export interface ThemeContextType {
   theme: Theme;
 }
 
-const ThemeContext = React.createContext<ThemeContextType>(null);
+const ThemeContext = React.createContext<ThemeContextType | null>(null);
 
 interface Props {
   children: React.ReactNode;

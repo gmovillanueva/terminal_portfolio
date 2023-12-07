@@ -18,4 +18,5 @@ export const handleTabAutoComplete = (
   if (commands.length === 1) {
     setCommand(commands[0]);
   }
+  return;
 };

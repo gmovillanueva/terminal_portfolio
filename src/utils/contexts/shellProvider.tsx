@@ -1,9 +1,4 @@
-import React, {
-  KeyboardEvent,
-  PropsWithChildren,
-  useReducer,
-  ReactNode,
-} from 'react';
+import { KeyboardEvent, PropsWithChildren, useReducer, ReactNode } from 'react';
 
 import { createContext } from '@functions/createContext';
 import { ShellOutput, ShellStatus } from '@utils/types';

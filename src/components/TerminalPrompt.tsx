@@ -25,7 +25,7 @@ const TerminalPrompt = forwardRef<HTMLInputElement, unknown>((_props, ref) => {
     inputRef.current?.scrollIntoView({ block: 'end' });
   }, [executeCommand]);
 
-  const handleSubmit = (command) => {
+  const handleSubmit = (command: string) => {
     executeCommand(command);
 
     if (inputRef.current) {
