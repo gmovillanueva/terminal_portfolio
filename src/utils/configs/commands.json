@@ -1,0 +1,64 @@
+
+
+{
+  "clear": {
+    "description": "sudo rm -f -r -v",
+    "tabs": 8,
+    "type": "utility"
+  },
+  "help": {
+    "description": "Well...",
+    "tabs": 9,
+    "type": "utility"
+  },
+  "theme": {
+    "description": "Check available themes",
+    "tabs": 7,
+    "type": "utility"
+  },
+  "about": {
+    "description": "Need more info?",
+    "tabs": 8,
+    "type": "base"
+  },
+  "contact": {
+    "description": "Looking for your car's extended warranty?",
+    "tabs": 6,
+    "type": "base"
+  },
+  "github": {
+    "description": "Looking for my work?",
+    "tabs": 7,
+    "type": "base"
+  },
+  "projects": {
+    "description": "Stuff I made that I think was cool.",
+    "tabs": 5,
+    "type": "base"
+  },
+  "skills": {
+    "description": "Things I am alright with.",
+    "tabs": 7,
+    "type": "base"
+  },
+  "welcome": {
+    "description": "Display the banner.",
+    "tabs": 6,
+    "type": "base"
+  },
+  "echo": {
+    "description": "echo",
+    "tabs": 9,
+    "type": "fun"
+  },
+  "gui": {
+    "description": "Install awesome GUI",
+    "tabs": 10,
+    "type": "fun"
+  },
+  "whoami": {
+    "description": "About the current user.",
+    "tabs": 7,
+    "type": "fun"
+  }
+}
