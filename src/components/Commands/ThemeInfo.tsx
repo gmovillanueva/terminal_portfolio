@@ -1,9 +1,9 @@
-const Theme = (args: string[]) => {
-  if (args.length > 0) return <p>about: {args.join(' ')} is not valid</p>;
+const ThemeInfo = (args: string[]) => {
+  if (args.length > 0) return <p>theme: {args.join(' ')} is not valid</p>;
   return (
     <div
       className='mb-3 mt-1'
-      data-testid='about'
+      data-testid='themeinfo'
     >
       <p className='font-bold leading-6 text-[#DDEEDD]'>Name: Arthur</p>
       <p className='font-bold leading-6 text-[#DDEEDD]'>foreground: #DDEEDD</p>
@@ -28,4 +28,4 @@ const Theme = (args: string[]) => {
   );
 };
 
-export default Theme;
+export default ThemeInfo;

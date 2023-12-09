@@ -1,30 +1,51 @@
-# React + TypeScript + Vite
+<!-- Intro Section-->
+# TerminalPortfolio
+My terminal style portfolio application built using React, TypeScript, TailwindCSS, Vite, and Vitest
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<!-- Why Section-->
+## Okay... But why?
+I am a huge fan of Linux. What else can I say? 
 
-Currently, two official plugins are available:
+<!-- Features Section-->
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [x] Wrote most of the README
+- [x] Actually functions 
+- [x] Added themes
+- [x] Added theme info
+- [x] Cool ASCII picture of myself
 
-## Expanding the ESLint configuration
+<!-- Upcoming Features Section-->
+## Upcoming Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Make themes changeable... (Whoops)
+- Add GUI
+- Allow switching between GUI and Prompt
+- Docker support
 
-- Configure the top-level `parserOptions` property like this:
+<!-- Installation Section-->
+## Installation
+Really want to install my portfolio? Sure.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+1. Clone repo
+2. Install dependencies:
+```bash
+npm install
+```
+3. Run project
+```bash
+npm run dev
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+<!-- Contributing Section-->
+## Contributing
+
+Feel like contributing?
+Go ahead!
+Feel free to do pull requests or log issues.
+
+
+<!-- License Section-->
+## License
+
+[MIT License](https://choosealicense.com/licenses/mit/)

@@ -11,29 +11,29 @@ type Project = {
 const Project = (project: Project, key: number) => {
   return (
     <div key={key}>
-      <p className='title'>{project.name}</p>
-      <div className='columns'>
-        <span className='col'>Description:</span>
-        <span className='value'>{project.description}</span>
+      <p className=''>{project.name}</p>
+      <div className=''>
+        <span className=''>Description:{'\xA0'}</span>
+        <span className=''>{project.description}</span>
       </div>
-      <div className='columns'>
-        <span className='col'>Project Repository:</span>
+      <div className=''>
+        <span>Project Repository:{'\xA0'}</span>
         <a
           href={project.repo}
           target='_blank'
-          className='value'
+          className='text-[#CD5C5C]'
           rel='noreferrer'
         >
           {project.repo}
         </a>
       </div>
       {project.link && (
-        <div className='columns'>
-          <span className='col'>Live:</span>
+        <div className=''>
+          <span className=''>Live:{'\xA0'}</span>
           <a
             href={project.link}
             target='_blank'
-            className='value'
+            className=''
             rel='noreferrer'
           >
             {project.link}
@@ -41,9 +41,9 @@ const Project = (project: Project, key: number) => {
         </div>
       )}
       {project.tech.length > 0 && (
-        <div className='columns'>
-          <span className='col'>Technologies:</span>
-          <span className='value'>{project.tech.join(', ')}</span>
+        <div className=''>
+          <span className=''>Technologies:{'\xA0'}</span>
+          <span className=''>{project.tech.join(', ')}</span>
         </div>
       )}
       <br />

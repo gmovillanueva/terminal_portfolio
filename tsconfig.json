@@ -31,7 +31,8 @@
       "@reducers/*": ["./src/utils/reducers/*"],
       "@configs/*": ["./src/utils/configs/*"],
       "@projectTypes/*": ["./src/utils/types/*"],
-      "@interfaces/*": ["./src/utils/interfaces/*"]
+      "@interfaces/*": ["./src/utils/interfaces/*"],
+      "@css/*": ["./src/utils/css/*"]
     }
   },
   "include": ["src"],

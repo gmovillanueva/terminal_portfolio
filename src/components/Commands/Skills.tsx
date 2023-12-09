@@ -1,5 +1,5 @@
 const Skills = (args: string[]) => {
-  if (args.length > 0) return <p>about: {args.join(' ')} is not valid</p>;
+  if (args.length > 0) return <p>skills: {args.join(' ')} is not valid</p>;
   return (
     <div data-testid='skills'>
       <p>List of some of my skills.</p>

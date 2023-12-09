@@ -6,12 +6,13 @@ import Echo from '@components/Commands/Echo.tsx';
 import Help from '@components/Commands/Help.tsx';
 import Projects from '@components/Commands/Projects.tsx';
 import Banner from '@components/Commands/Banner.tsx';
-import Theme from '@components/Commands/Theme.tsx';
+import ThemeInfo from '@components/Commands/ThemeInfo.tsx';
 import Contact from '@components/Commands/Contact.tsx';
 import Github from '@components/Commands/Github.tsx';
 import Skills from '@components/Commands/Skills.tsx';
 import GUI from '@components/Commands/GUI.tsx';
 import WhoAmI from '@components/Commands/WhoAmI.tsx';
+import Themes from '@components/Commands/Themes.tsx';
 
 type Commands = { [key: string]: Command };
 
@@ -31,7 +32,13 @@ export const commands: Commands = {
   theme: {
     name: 'theme',
     description: 'Check theme info.',
-    run: Theme,
+    run: ThemeInfo,
+    type: 'utility',
+  },
+  themes: {
+    name: 'themes',
+    description: 'Check available themes.',
+    run: Themes,
     type: 'utility',
   },
   about: {

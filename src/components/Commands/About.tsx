@@ -8,13 +8,21 @@ const About = (args: string[]) => {
       data-testid='about'
     >
       <pre>{heroASCII}</pre>
+      <p className='mt-2 leading-6'>Hello fellow coffee drinker!</p>
       <p className='mt-2 leading-6'>
-        Hello, my name is{' '}
-        <span className='font-bold text-[#CD5C5C]'>William Newton</span>!
+        Thank you for showing such keen interest in me.
+      </p>
+      <p className='mt-2 leading-6'>I guess you want to know more about me?</p>
+      <p className='mt-2 leading-6'>Where to begin...</p>
+      <p className='mt-2 leading-6'>
+        <span>In a glaxay very far far away... </span>
       </p>
       <p className='mt-2 leading-6'>
-        I'm <span className='font-bold'>a full-stack developer</span> based in
-        Texas, United States
+        Alright all jokes aside. As you hopefully know I am{' '}
+        <span className='font-bold text-[#CD5C5C]'>William Newton</span> a{' '}
+        <span className='font-bold'>full-stack developer</span> born and raised
+        in <span className='font-bold'>Texas, United States</span>. No we do not
+        ride horses everywhere that is only saved for sundays.
       </p>
       <p className='mt-2 leading-6'>
         I am passionate about writing code, and solve complex problems.
