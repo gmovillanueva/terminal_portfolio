@@ -6,11 +6,12 @@ const Github = (args: string[]) => {
       data-testid='github'
     >
       <a
+        className='text-color_11'
         href='https://github.com/gmovillanueva'
         target='_blank'
         rel='noreferrer'
       >
-        Github
+        Github &#60;- Click me!
       </a>
     </div>
   );

@@ -5,8 +5,6 @@ import { ShellOutput, ShellStatus } from '@utils/types';
 import { getCommands } from '@functions/getCommands.ts';
 import { Helper } from '@utils/types';
 
-//import { useTheme } from '@contexts/themeProvider.tsx';
-
 import {
   historyReducer,
   historyInitialState,

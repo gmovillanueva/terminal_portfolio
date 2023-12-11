@@ -6,11 +6,12 @@ const Contact = (args: string[]) => {
       data-testid='contact'
     >
       <a
+        className='text-color_11'
         href='https://www.linkedin.com/in/gmownewton/'
         target='_blank'
         rel='noreferrer'
       >
-        LinkedIn
+        LinkedIn &#60;- Click me!
       </a>
     </div>
   );

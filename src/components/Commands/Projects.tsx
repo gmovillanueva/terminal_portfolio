@@ -42,6 +42,10 @@ const Project = (project: Project, key: number) => {
       )}
       {project.tech.length > 0 && (
         <div className=''>
+          <p>
+            Unfortunately I could only make a small subset of my major projects
+            public.
+          </p>
           <span className=''>Technologies:{'\xA0'}</span>
           <span className=''>{project.tech.join(', ')}</span>
         </div>

@@ -16,7 +16,7 @@ export const Terminal = () => {
     <main
       id='terminal-interface'
       aria-label='Terminal'
-      className='h-full w-full p-2'
+      className='h-full w-full p-2 '
       onClick={() => focusInput()}
     >
       <ShellProvider>
