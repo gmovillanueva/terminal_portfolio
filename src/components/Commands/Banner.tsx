@@ -15,7 +15,7 @@ const Banner = (args: string[]) => {
         <div>Welcome to my site fellow humans and bots!</div>
         <div className='my-3'>----</div>
         <div>
-          Type '<span className='text-[#CC5533]'>help</span>' for list of
+          Type '<span className='text-color_10'>help</span>' for list of
           available commands.
         </div>
       </div>

@@ -21,7 +21,7 @@ const Project = (project: Project, key: number) => {
         <a
           href={project.repo}
           target='_blank'
-          className='text-[#CD5C5C]'
+          className='text-color_02'
           rel='noreferrer'
         >
           {project.repo}

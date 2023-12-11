@@ -1,4 +1,5 @@
-/*import { DEFAULT_THEME, themes } from '@configs/allThemes.ts';
+/*
+import { DEFAULT_THEME, themes } from '@configs/allThemes.ts';
 import { PropsWithChildren, useEffect, useState } from 'react';
 import { IMappedTheme, mapTheme } from '@interfaces/themeInterface.ts';
 
@@ -29,15 +30,15 @@ export const ThemeProvider = ({ children }: PropsWithChildren) => {
   };
 
   return <ThemeProvider value={{ theme, setTheme }}>{children}</ThemeProvider>;
-};*/
+};
 
 //export const ThemeProvider:
 
-/*import React, { useEffect, useState } from 'react';
+/!*import React, { useEffect, useState } from 'react';
 import Themes from '@configs/themes.json';
 import { ThemeInterface } from '@interfaces/themeInterface.ts';
-import config from '@root/config.json';*/
-/*
+import config from '@root/config.json';*!/
+/!*
 
 export interface ThemeContextType {
   setTheme: (name: string) => string;
@@ -83,4 +84,5 @@ export const ThemeProvider: React.FC<Props> = ({ children }) => {
     </ThemeContext.Provider>
   );
 };
-react*/
+react*!/
+*/

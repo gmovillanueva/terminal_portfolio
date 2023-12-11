@@ -19,7 +19,7 @@ const About = (args: string[]) => {
       </p>
       <p className='mt-2 leading-6'>
         Alright all jokes aside. As you hopefully know I am{' '}
-        <span className='font-bold text-[#CD5C5C]'>William Newton</span> a{' '}
+        <span className='font-bold text-color_02'>William Newton</span> a{' '}
         <span className='font-bold'>full-stack developer</span> born and raised
         in <span className='font-bold'>Texas, United States</span>. No we do not
         ride horses everywhere that is only saved for sundays.

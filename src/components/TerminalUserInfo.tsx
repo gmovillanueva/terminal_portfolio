@@ -18,9 +18,9 @@ const TerminalUserInfo = () => {
       className='mr-3 inline-block'
     >
       <span>[</span>
-      <span className='text-[#CD5C5C]'>visitor</span>
+      <span className='text-color_02'>visitor</span>
       <span>@</span>
-      <span className='text-[#87CEEB]'>{hostname}</span>
+      <span className='text-color_13'>{hostname}</span>
       <span> ~]$</span>
     </div>
   );
