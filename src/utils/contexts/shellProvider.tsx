@@ -1,6 +1,13 @@
-import { KeyboardEvent, PropsWithChildren, useReducer, ReactNode } from 'react';
+import React, {
+  KeyboardEvent,
+  PropsWithChildren,
+  useReducer,
+  ReactNode,
+  useEffect,
+  useRef,
+} from 'react';
 
-import { createContext } from '@functions/createContext';
+//import { createContext } from '@functions/createContext';
 import { ShellOutput, ShellStatus } from '@utils/types';
 import { getCommands } from '@functions/getCommands.ts';
 import { Helper } from '@utils/types';
@@ -20,16 +27,29 @@ import {
 
 import { CommandOutput, ConsoleOutput } from '@components/ConsoleOutput.tsx';
 
-const [useContext, Provider] = createContext<{
+interface ShellContextType {
   history: string[];
   consoleWindow: ReactNode[];
+
   executeCommand: (command: string) => void;
   executeEvent: (event: KeyboardEvent, inputValue: string) => ShellOutput;
-}>();
+}
 
-export const useShell = useContext;
+const ShellContext = React.createContext<ShellContextType>(
+  {} as ShellContextType,
+);
+export const useShell = () => React.useContext(ShellContext);
 
 export const ShellProvider = ({ children }: PropsWithChildren) => {
+  const init = useRef(true);
+
+  useEffect(() => {
+    if (init.current) {
+      executeCommand('banner');
+      init.current = false;
+    }
+  }, []);
+
   const [history, historyDispatch] = useReducer(
     historyReducer,
     historyInitialState,
@@ -53,6 +73,7 @@ export const ShellProvider = ({ children }: PropsWithChildren) => {
   const executeCommand = (command: string) => {
     historyDispatch(addHistory(command));
     consoleDispatch(addToConsole(ConsoleOutput(command)));
+    console.log(history);
 
     if (command) {
       consoleDispatch(addToConsole(CommandOutput(command, helper)));
@@ -91,12 +112,16 @@ export const ShellProvider = ({ children }: PropsWithChildren) => {
       }
     }
 
+    /*if(event.key === 'ArrowUp')*/
+
     return { output, status };
   };
 
   return (
-    <Provider value={{ history, consoleWindow, executeCommand, executeEvent }}>
+    <ShellContext.Provider
+      value={{ history, consoleWindow, executeCommand, executeEvent }}
+    >
       {children}
-    </Provider>
+    </ShellContext.Provider>
   );
 };

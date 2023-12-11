@@ -1,7 +1,6 @@
 import {
   forwardRef,
   KeyboardEventHandler,
-  memo,
   useEffect,
   useImperativeHandle,
   useRef,
@@ -22,7 +21,7 @@ const TerminalPrompt = forwardRef<HTMLInputElement, unknown>((_props, ref) => {
   });
 
   useEffect(() => {
-    inputRef.current?.scrollIntoView({ block: 'end' });
+    window.scrollTo(0, document.body.scrollHeight);
   }, [executeCommand]);
 
   const handleSubmit = (command: string) => {
@@ -82,4 +81,4 @@ const TerminalPrompt = forwardRef<HTMLInputElement, unknown>((_props, ref) => {
 
 TerminalPrompt.displayName = 'Prompt';
 
-export default memo(TerminalPrompt);
+export default TerminalPrompt;

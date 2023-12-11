@@ -1,15 +1,7 @@
-import React from 'react';
 import { useShell } from '@contexts/shellProvider.tsx';
 
 const Console = () => {
-  const { consoleWindow, executeCommand } = useShell();
-
-  React.useEffect(() => {
-    executeCommand('banner');
-    return () => {
-      executeCommand('clear');
-    };
-  }, []);
+  const { consoleWindow } = useShell();
 
   return (
     <div>
