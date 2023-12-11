@@ -4,7 +4,7 @@ import { getThemes } from '@functions/getThemes.ts';
 const ThemeInfo = (args: string[]) => {
   if (args.length > 0) return <p>theme: {args.join(' ')} is not valid</p>;
 
-  const currentTheme = getThemes().get(getStorage('user-theme'));
+  const currentTheme = getThemes().get(getStorage('theme'));
 
   return (
     <div

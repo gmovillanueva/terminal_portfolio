@@ -39,7 +39,7 @@ const Themes = (args: string[]) => {
 
   if (args[0] === 'set' && themeExists(args[1])) {
     applyTheme(args[1]);
-    saveStorage('user-theme', args[1]);
+    saveStorage('theme', args[1]);
   } else {
     return <p>themes: {args.join(' ')} is not valid</p>;
   }
