@@ -2,34 +2,33 @@
   "projects": [
     {
       "name": "Capyba-UI",
-      "description": "Collection of UI Elements",
+      "description": "A Collection of UI Elements",
       "repo": "https://github.com/gmovillanueva/capyba-ui",
-      "link": "",
-      "tech": ["reactjs", "typescript", "tailwindcss"]
+      "tech": ["React", "TypeScript", "TailwindCSS"]
     },
     {
       "name": "Portfolio",
       "description": "Portfolio",
       "repo": "https://github.com/gmovillanueva/react_portfolio",
-      "tech": ["nextjs", "typescript", "headless cms"]
+      "tech": ["Next.js", "TypeScript", "Framer Motion","Headless CMS"]
     },
     {
       "name": "The DooList",
       "description": "Simple TODO List used to learn Ruby on Rails",
       "repo": "https://github.com/gmovillanueva/thedolist",
       "tech": [
-        "reactjs",
-        "vite",
-        "vitest",
-        "tailwindcss",
-        "rubyonrails"
+        "React",
+        "Vite",
+        "ViTest",
+        "TailwindCSS",
+        "Ruby on Rails"
       ]
     },
     {
       "name": "CHI_TECH",
-      "description": "Scientific  Simulation Engine",
+      "description": "A Scientific Simulation Engine",
       "repo": "https://github.com/chi-tech/chi-tech",
-      "tech": ["cpp", "python", "lua"]
+      "tech": ["C++", "Python", "LUA", "VTK"]
     }
   ]
 }

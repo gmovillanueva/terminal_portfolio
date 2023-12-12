@@ -6,11 +6,13 @@ const Banner = (args: string[]) => {
 
   return (
     <div
-      className='flex flex-wrap-reverse md:mb-6'
+      className='ml-5 flex flex-wrap-reverse md:mb-6'
       data-testid='banner'
     >
       <div className='md:basis-1/2'>
-        <pre className='mb-6 mt-2 hidden md:flex'>{nameASCII}</pre>
+        <pre className='text-shadow mb-6 mt-2 hidden font-semibold shadow-color_05 md:flex'>
+          {nameASCII}
+        </pre>
         <div>A wild user has appeared!</div>
         <div>Welcome to my site fellow humans and bots!</div>
         <div className='my-3'>----</div>
@@ -18,6 +20,7 @@ const Banner = (args: string[]) => {
           Type '<span className='text-color_10'>help</span>' for list of
           available commands.
         </div>
+        <div className='my-3'>----</div>
       </div>
     </div>
   );

@@ -2,13 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-/*
 @layer base {
     html {
-        @apply text-[#DDEEDD]
-    }
-    body {
-        @apply bg-[#1C1C1C]
+        scrollbar-width: thin;
+        scrollbar-color: var(--color-color_12) var(--color-background) ;
     }
 }
-*/
+

@@ -4,7 +4,7 @@ const About = (args: string[]) => {
   if (args.length > 0) return <p>about: {args.join(' ')} is not valid</p>;
   return (
     <div
-      className='mb-3 mt-1'
+      className='mb-3 ml-5 mt-1'
       data-testid='about'
     >
       <pre>{heroASCII}</pre>
@@ -19,7 +19,7 @@ const About = (args: string[]) => {
       <br />
       <br />
       <p className='mt-2 font-bold leading-6'>
-        <span className='text-3xl font-bold text-color_12'>
+        <span className='text-shadow-medium text-3xl font-bold text-color_12 shadow-color_12'>
           In a galaxy very far far away...{' '}
         </span>
       </p>

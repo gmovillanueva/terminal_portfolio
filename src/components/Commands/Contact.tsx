@@ -2,7 +2,7 @@ const Contact = (args: string[]) => {
   if (args.length > 0) return <p>contact: {args.join(' ')} is not valid</p>;
   return (
     <div
-      className='mb-3 mt-1'
+      className='mb-3 ml-5 mt-1'
       data-testid='contact'
     >
       <a

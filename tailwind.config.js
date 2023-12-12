@@ -28,6 +28,10 @@ export default {
         background: 'var(--color-background)',
         foreground: 'var(--color-foreground)',
       },
+      textShadow: {
+        medium: '0px 0px 4px var(--tw-shadow-color)',
+        DEFAULT: '0px 0px 5px var(--tw-shadow-color)',
+      },
     },
     backgroundColor: (theme) => ({
       ...theme('colors'),
@@ -38,8 +42,17 @@ export default {
   },
   plugins: [
     require('@tailwindcss/forms'),
+    require('tailwind-scrollbar'),
     plugin(function ({ addVariant }) {
       addVariant('not-last', '&:not(:last-child)');
+    }),
+    plugin(function ({ matchUtilities, theme }) {
+      matchUtilities(
+        {
+          'text-shadow': (value) => ({ textShadow: value }),
+        },
+        { values: theme('textShadow') },
+      );
     }),
   ],
 };

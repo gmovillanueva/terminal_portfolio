@@ -1,0 +1,10 @@
+{
+  "skills": [
+    {
+      "languages": ["HTML","CSS","Javascript","TypeScript","Python","C++","Java"],
+      "technologies": ["React", "Vite", "Node.js", "CircleCI", "Harness", "Headless CMS", "Sass (SCSS)"],
+      "frameworks": ["Next.js","TailwindCSS", "Jest", "ViTest"],
+      "tools": ["Docker", "Git"]
+    }
+  ]
+}

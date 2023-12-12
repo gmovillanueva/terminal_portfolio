@@ -6,17 +6,28 @@ import { saveStorage } from '@functions/saveStorage.ts';
 
 const Theme = (themeObject: { themeKey: string; theme: ThemeInterface }) => {
   return (
-    <div>
-      <p>
+    <tr>
+      <td>{themeObject.theme.name}</td>
+      <td className='w-12 text-center'>-</td>
+      <td>{themeObject.themeKey}</td>
+    </tr>
+    /*    <div>
+      <p className='ml-5'>
         {themeObject.theme.name} - {themeObject.themeKey}
       </p>
-    </div>
+    </div>*/
   );
 };
 
 const Themes = (args: string[]) => {
   /* if (args.length !== 1) return <p>themes: {args.join(' ')} is not valid</p>;*/
-  if (args.length < 1) return <p>themes: {args.join(' ')} is not valid</p>;
+  if (args.length < 1)
+    return (
+      <div>
+        <p>themes: {args.join(' ')} is not valid</p>
+        <p>Try 'ls' or 'set [themeName]'</p>
+      </div>
+    );
 
   const themes = Array.from(getThemes(), ([themeKey, theme]) => {
     return { themeKey: themeKey, theme: theme };
@@ -25,7 +36,27 @@ const Themes = (args: string[]) => {
   if (args[0] === 'ls')
     return (
       <div>
-        <p>Available Themes:</p>
+        <table className='ml-5 table-fixed'>
+          <thead>
+            <tr>
+              <th className='text-left'>Theme Name</th>
+              <th>-</th>
+              <th className='text-left'>Theme Command</th>
+            </tr>
+          </thead>
+          <tbody>
+            {themes.map((themeObject, index) => {
+              return (
+                <Theme
+                  key={index}
+                  {...themeObject}
+                />
+              );
+            })}
+          </tbody>
+        </table>
+        {/*        <p className='ml-5'>Available Themes:</p>
+        <div className='mb-5 ml-5'>----</div>
         {themes.map((themeObject, index) => {
           return (
             <Theme
@@ -33,7 +64,7 @@ const Themes = (args: string[]) => {
               {...themeObject}
             />
           );
-        })}
+        })}*/}
       </div>
     );
 

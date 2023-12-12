@@ -7,7 +7,6 @@ import React, {
   useRef,
 } from 'react';
 
-//import { createContext } from '@functions/createContext';
 import { ShellOutput, ShellStatus } from '@utils/types';
 import { getCommands } from '@functions/getCommands.ts';
 import { Helper } from '@utils/types';
@@ -112,7 +111,7 @@ export const ShellProvider = ({ children }: PropsWithChildren) => {
       }
     }
 
-    /*if(event.key === 'ArrowUp')*/
+    /*if(event.key === 'ArrowUp'){}*/
 
     return { output, status };
   };

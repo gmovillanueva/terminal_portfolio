@@ -8,17 +8,20 @@ const ThemeInfo = (args: string[]) => {
 
   return (
     <div
-      className='mb-3 mt-1'
+      className='mb-3 ml-5 mt-1'
       data-testid='themeinfo'
     >
       <p className='font-bold leading-6 text-foreground'>
-        Name: {currentTheme?.name}
+        Theme Name: {currentTheme?.name}
       </p>
       <p className='font-bold leading-6 text-foreground'>
         foreground: {currentTheme?.foreground}
       </p>
       <p className='font-bold leading-6 text-background'>
-        background: {currentTheme?.background}
+        background: {currentTheme?.background}{' '}
+        <span className='font-bold leading-6 text-foreground'>
+          &#60;- Something exists here!
+        </span>
       </p>
       <p className='font-bold leading-6 text-color_01'>
         Color_01: {currentTheme?.color_01}

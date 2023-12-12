@@ -5,7 +5,7 @@ const Command = (command: Command) => {
   return (
     <div className='ml-5 flex'>
       <div>
-        <p>{command.name}</p>
+        <p className='text-color_10'>{command.name}</p>
         <p className='ml-3'>- {command.description}</p>
       </div>
     </div>

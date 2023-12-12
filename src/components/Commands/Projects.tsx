@@ -11,29 +11,29 @@ type Project = {
 const Project = (project: Project, key: number) => {
   return (
     <div key={key}>
-      <p className=''>{project.name}</p>
-      <div className=''>
+      <p>{project.name}</p>
+      <div className='ml-4'>
         <span className=''>Description:{'\xA0'}</span>
         <span className=''>{project.description}</span>
       </div>
-      <div className=''>
+      <div className='ml-4'>
         <span>Project Repository:{'\xA0'}</span>
         <a
           href={project.repo}
           target='_blank'
-          className='text-color_02'
+          className='text-color_11'
           rel='noreferrer'
         >
           {project.repo}
         </a>
       </div>
       {project.link && (
-        <div className=''>
+        <div className='ml-4'>
           <span className=''>Live:{'\xA0'}</span>
           <a
             href={project.link}
             target='_blank'
-            className=''
+            className='text-color_11'
             rel='noreferrer'
           >
             {project.link}
@@ -41,12 +41,8 @@ const Project = (project: Project, key: number) => {
         </div>
       )}
       {project.tech.length > 0 && (
-        <div className=''>
-          <p>
-            Unfortunately I could only make a small subset of my major projects
-            public.
-          </p>
-          <span className=''>Technologies:{'\xA0'}</span>
+        <div className='ml-4'>
+          <span className=''>Technologies Used:{'\xA0'}</span>
           <span className=''>{project.tech.join(', ')}</span>
         </div>
       )}
@@ -60,7 +56,16 @@ const Projects = (args: string[]) => {
     return <p>projects: {args.join(' ')} is not valid command</p>;
   const projects = getProject();
 
-  return <div>{projects.map((project, idx) => Project(project, idx))}</div>;
+  return (
+    <div className='ml-5'>
+      <p className='my-2'>
+        Unfortunately I could only make a small subset of my major projects
+        public. So here are some cool projects I have created over time to learn
+        new skills.
+      </p>
+      <div>{projects.map((project, idx) => Project(project, idx))}</div>
+    </div>
+  );
 };
 
 export default Projects;
