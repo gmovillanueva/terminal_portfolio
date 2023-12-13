@@ -2,7 +2,7 @@ import { ThemeInterface } from '@interfaces/themeInterface.ts';
 
 type Themes = { [key: string]: ThemeInterface };
 
-export const DEFAULT_THEME: string = 'arthur';
+export const DEFAULT_THEME: string = 'laserwave';
 
 //
 // color_01   === Black (Host)
