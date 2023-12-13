@@ -65,6 +65,7 @@ const TerminalPrompt = forwardRef<HTMLInputElement, unknown>((_props, ref) => {
         className='flex-grow border-0 bg-transparent focus:outline-none focus:ring-0 focus:ring-offset-0'
         id='terminal-prompt'
         title='Terminal Prompt'
+        data-testid='terminal-prompt'
         aria-label='Terminal Prompt'
         type='text'
         spellCheck='false'

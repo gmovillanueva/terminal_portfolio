@@ -15,6 +15,7 @@ export const Terminal = () => {
   return (
     <main
       id='terminal-interface'
+      data-testid='terminal-interface'
       aria-label='Terminal'
       className='h-full w-full p-2 '
       onClick={() => focusInput()}

@@ -59,7 +59,7 @@ const Projects = (args: string[]) => {
   return (
     <div className='ml-5'>
       <p className='my-2'>
-        Unfortunately I could only make a small subset of my major projects
+        Unfortunately I could only make a small subset of my major projects are
         public. So here are some cool projects I have created over time to learn
         new skills.
       </p>
