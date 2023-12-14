@@ -1,7 +1,8 @@
 import { heroASCII } from '@configs/bannerInformation.tsx';
 
 const About = (args: string[]) => {
-  if (args.length > 0) return <p>about: {args.join(' ')} is not valid</p>;
+  if (args.length > 0)
+    return <p>about: {args.join(' ')} is not a valid command.</p>;
   return (
     <div
       className='mb-3 ml-5 mt-1'

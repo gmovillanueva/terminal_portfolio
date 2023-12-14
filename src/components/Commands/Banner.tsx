@@ -2,7 +2,7 @@ import { nameASCII } from '@configs/bannerInformation.tsx';
 
 const Banner = (args: string[]) => {
   if (args.length > 0)
-    return <p>banner: {args.join(' ')} is not valid command</p>;
+    return <p>banner: {args.join(' ')} is not a valid command.</p>;
 
   return (
     <div
@@ -10,7 +10,7 @@ const Banner = (args: string[]) => {
       data-testid='banner'
     >
       <div className='md:basis-1/2'>
-        <pre className='text-shadow mb-6 mt-2 hidden font-semibold shadow-color_05 md:flex'>
+        <pre className='mb-6 mt-2 hidden font-semibold shadow-color_05 text-shadow md:flex'>
           {nameASCII}
         </pre>
         <div>A wild user has appeared!</div>

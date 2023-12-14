@@ -3,7 +3,7 @@ import { Helper } from '@utils/types';
 
 const Clear = (args: string[], helper: Helper) => {
   if (args.length > 0) {
-    return <p>clear: {args.join(' ')} is not valid command</p>;
+    return <p>clear: {args.join(' ')} is not a valid command.</p>;
   }
   const dispatch = helper.console.consoleDispatch;
 

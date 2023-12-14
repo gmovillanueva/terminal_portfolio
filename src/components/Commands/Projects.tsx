@@ -53,7 +53,7 @@ const Project = (project: Project, key: number) => {
 
 const Projects = (args: string[]) => {
   if (args.length > 0)
-    return <p>projects: {args.join(' ')} is not valid command</p>;
+    return <p>projects: {args.join(' ')} is not a valid command.</p>;
   const projects = getProject();
 
   return (

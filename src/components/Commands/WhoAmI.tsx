@@ -1,5 +1,6 @@
 const WhoAmI = (args: string[]) => {
-  if (args.length > 0) return <p>whoami: {args.join(' ')} is not valid</p>;
+  if (args.length > 0)
+    return <p>whoami: {args.join(' ')} is not a valid command.</p>;
   return (
     <div
       className='mb-3 ml-5 mt-1'

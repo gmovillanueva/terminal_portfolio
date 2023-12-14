@@ -14,7 +14,7 @@ const Command = (command: Command) => {
 
 const Help = (args: string[]) => {
   if (args.join())
-    return <span>help: {args.join(' ')}: is not help command</span>;
+    return <span>help: {args.join(' ')} is not a valid command.</span>;
 
   const commands = Array.from(getCommands(), ([, value]) => {
     return value as Command;
@@ -43,12 +43,6 @@ const Help = (args: string[]) => {
         <div>
           <p>Ctrl + l</p>
           <p className='ml-3'>- Clears the screen</p>
-        </div>
-      </div>
-      <div className='ml-5 flex'>
-        <div>
-          <p>Ctrl + c</p>
-          <p className='ml-3'>- Interprets Command</p>
         </div>
       </div>
     </div>

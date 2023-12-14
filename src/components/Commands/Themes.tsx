@@ -11,11 +11,6 @@ const Theme = (themeObject: { themeKey: string; theme: ThemeInterface }) => {
       <td className='w-12 text-center'>-</td>
       <td>{themeObject.themeKey}</td>
     </tr>
-    /*    <div>
-      <p className='ml-5'>
-        {themeObject.theme.name} - {themeObject.themeKey}
-      </p>
-    </div>*/
   );
 };
 
@@ -24,7 +19,7 @@ const Themes = (args: string[]) => {
   if (args.length < 1)
     return (
       <div>
-        <p>themes: {args.join(' ')} is not valid</p>
+        <p>setTheme: {args.join(' ')} is not a valid command.</p>
         <p>Try 'ls' or 'set [themeName]'</p>
       </div>
     );
@@ -55,16 +50,6 @@ const Themes = (args: string[]) => {
             })}
           </tbody>
         </table>
-        {/*        <p className='ml-5'>Available Themes:</p>
-        <div className='mb-5 ml-5'>----</div>
-        {themes.map((themeObject, index) => {
-          return (
-            <Theme
-              key={index}
-              {...themeObject}
-            />
-          );
-        })}*/}
       </div>
     );
 
@@ -72,7 +57,7 @@ const Themes = (args: string[]) => {
     applyTheme(args[1]);
     saveStorage('theme', args[1]);
   } else {
-    return <p>themes: {args.join(' ')} is not valid</p>;
+    return <p>themes: {args.join(' ')} is not a valid command.</p>;
   }
 };
 
