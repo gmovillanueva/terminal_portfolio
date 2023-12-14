@@ -50,6 +50,11 @@ const About = (args: string[]) => {
         After my rough encounter with Assembly, I eventually moved to C/C++ and
         finally to web development.
       </p>
+      <p className='mt-2 leading-6'>
+        Fast-forwarding to today, I have worked at a Tier 1 university, a
+        start-up and free-lanced. My primary focus is building accessible
+        products and digital experiences.
+      </p>
     </div>
   );
 };
