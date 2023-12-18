@@ -1,7 +1,7 @@
 const Echo = (args: string[]) => {
   return (
     <div>
-      echo <span>{args.join(' ')}</span>
+      <span>{args.join(' ')}</span>
     </div>
   );
 };
