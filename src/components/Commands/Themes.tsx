@@ -25,7 +25,7 @@ const Themes = (args: string[]) => {
   if (args.length < 1)
     return (
       <div>
-        <p>theme: {args.join(' ')} is not a valid command.</p>
+        <p>Usage: theme [args]</p>
         <p>Try 'ls' to view available themes.'</p>
         <p>Try 'set [themeName]' to change theme.</p>
         <p>Try 'info [themeName]' for information about available themes.</p>
