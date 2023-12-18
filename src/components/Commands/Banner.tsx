@@ -16,6 +16,17 @@ const Banner = (args: string[]) => {
         <div>A wild user has appeared!</div>
         <div>Welcome to my site fellow humans and bots!</div>
         <div className='my-3'>----</div>
+        <p className='mt-2 leading-6'>
+          Thank you for showing such keen interest in me!
+        </p>
+        <p className='mt-2 leading-6'>
+          I am William Newton a full-stack developer, who is passionate about
+          programming!
+        </p>
+        <p className='mt-2 leading-6'>
+          I also enjoy working hard, and find a thrill on learning new things.
+        </p>
+        <div className='my-3'>----</div>
         <div>
           Type '<span className='text-color_10'>help</span>' for list of
           available commands.

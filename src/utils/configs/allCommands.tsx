@@ -6,7 +6,6 @@ import Echo from '@components/Commands/Echo.tsx';
 import Help from '@components/Commands/Help.tsx';
 import Projects from '@components/Commands/Projects.tsx';
 import Banner from '@components/Commands/Banner.tsx';
-import ThemeInfo from '@components/Commands/ThemeInfo.tsx';
 import Contact from '@components/Commands/Contact.tsx';
 import Github from '@components/Commands/Github.tsx';
 import Skills from '@components/Commands/Skills.tsx';
@@ -31,13 +30,7 @@ export const commands: Commands = {
   },
   theme: {
     name: 'theme',
-    description: 'Check theme info.',
-    run: ThemeInfo,
-    type: 'utility',
-  },
-  themes: {
-    name: 'themes',
-    description: 'Check available themes.',
+    description: 'Check, set and list available themes.',
     run: Themes,
     type: 'utility',
   },

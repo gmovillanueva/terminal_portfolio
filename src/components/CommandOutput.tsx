@@ -7,7 +7,6 @@ const Command = (command: string, helper: Helper) => {
   const commands = getCommands();
 
   if (!commands.get(commandName)) {
-    console.log(commandName);
     return <>{commandName}: command not found.</>;
   }
 

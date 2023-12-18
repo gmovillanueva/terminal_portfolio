@@ -8,13 +8,15 @@
     },
     {
       "name": "Portfolio",
-      "description": "Portfolio",
-      "repo": "https://github.com/gmovillanueva/react_portfolio",
-      "tech": ["Next.js", "TypeScript", "Framer Motion","Headless CMS"]
+      "description": "Terminal style portfolio",
+      "link": "https://www.willnewton.tech/",
+      "repo": "https://github.com/gmovillanueva/terminal_portfolio",
+      "tech": ["Next.js", "TypeScript","Vite","ViTest"]
     },
     {
       "name": "The DooList",
       "description": "Simple TODO List used to learn Ruby on Rails",
+      "link": "https://thedoolist-client.vercel.app/",
       "repo": "https://github.com/gmovillanueva/thedolist",
       "tech": [
         "React",
@@ -27,6 +29,7 @@
     {
       "name": "CHI_TECH",
       "description": "A Scientific Simulation Engine",
+      "link": "https://chi-tech.github.io/",
       "repo": "https://github.com/chi-tech/chi-tech",
       "tech": ["C++", "Python", "LUA", "VTK"]
     }

@@ -72,7 +72,6 @@ export const ShellProvider = ({ children }: PropsWithChildren) => {
   const executeCommand = (command: string) => {
     historyDispatch(addHistory(command));
     consoleDispatch(addToConsole(ConsoleOutput(command)));
-    console.log(history);
 
     if (command) {
       consoleDispatch(addToConsole(CommandOutput(command, helper)));

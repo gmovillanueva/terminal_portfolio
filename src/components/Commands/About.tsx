@@ -12,9 +12,7 @@ const About = (args: string[]) => {
       <p className='mt-2 leading-6'>
         Hello, fellow <span className='text-color_05'>coffee drinker</span>!
       </p>
-      <p className='mt-2 leading-6'>
-        Thank you for showing such keen interest in me.
-      </p>
+
       <p className='mt-2 leading-6'>
         I am guessing you want to know more about me?
       </p>
@@ -29,6 +27,7 @@ const About = (args: string[]) => {
       <br />
       <br />
       <p className='mt-2 leading-6'>
+        In case you could not tell, I try to be light-hearted and friendly.
         Alright, all jokes aside. As you probably know by now, I am{' '}
         <span className='font-bold text-color_02'>William Newton</span>, a{' '}
         <span className='font-bold text-color_07'>full-stack developer</span>{' '}

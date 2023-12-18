@@ -1,4 +1,6 @@
 export interface ThemeInterface {
+  name: string;
+  foreground: string;
   background: string;
   color_01: string;
   color_02: string;
@@ -17,9 +19,7 @@ export interface ThemeInterface {
   color_15: string;
   color_16: string;
   cursor: string;
-  foreground: string;
   hash: string;
-  name: string;
 }
 
 export interface IMappedTheme {
@@ -47,5 +47,29 @@ export const mapTheme = (variables: ThemeInterface): IMappedTheme => {
     '--color-background': variables.background || '',
     '--color-foreground': variables.foreground || '',
     name: variables.name || '',
+  };
+};
+
+export const mapThemeInfo = (variables: ThemeInterface): IMappedTheme => {
+  return {
+    'Theme Name': variables.name || '',
+    Background: variables.background || '',
+    Foreground: variables.foreground || '',
+    Color_01: variables.color_01 || '',
+    Color_02: variables.color_02 || '',
+    Color_03: variables.color_03 || '',
+    Color_04: variables.color_04 || '',
+    Color_05: variables.color_05 || '',
+    Color_06: variables.color_06 || '',
+    Color_07: variables.color_07 || '',
+    Color_08: variables.color_08 || '',
+    Color_09: variables.color_09 || '',
+    Color_10: variables.color_10 || '',
+    Color_11: variables.color_11 || '',
+    Color_12: variables.color_12 || '',
+    Color_13: variables.color_13 || '',
+    Color_14: variables.color_14 || '',
+    Color_15: variables.color_15 || '',
+    Color_16: variables.color_16 || '',
   };
 };
