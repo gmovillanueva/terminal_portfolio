@@ -1,12 +1,10 @@
-import { useEffect } from 'react';
-
 const GUI = (args: string[]) => {
   if (args.length > 0)
     return <p>gui: {args.join(' ')} is not a valid command.</p>;
 
-  useEffect(() => {
+  setTimeout(() => {
     window.location.href = 'https://gui.willnewton.tech/';
-  }, []);
+  });
 
   return (
     <div
